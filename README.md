@@ -1,2 +1,1 @@
-# exercicios_Java
-exercicios_java
+# exercicios_Java realizado em aula online em curso basico udemy.
