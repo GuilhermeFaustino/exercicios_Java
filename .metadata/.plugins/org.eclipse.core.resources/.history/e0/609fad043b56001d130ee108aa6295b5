@@ -1,0 +1,73 @@
+import java.util.Calendar;
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+		
+		Vaga vaga = new Vaga();
+		Estacionamento esta = new Estacionamento();
+		
+        int escolha;		
+do {
+			System.out.println("O que deseja fazer");
+			System.out.println("-------------------------");
+			System.out.println("1 - Entrada de Veiculo ?");
+			System.out.println("2 - Saida de Veiculo ?");
+			System.out.println("3 - Sair");
+			System.out.println("-------------------------");
+			escolha = sc.nextInt();				
+		switch(escolha){			
+			case 1:
+				System.out.println("Digite o Cpf do Usuario");	
+				sc.nextLine();
+			    vaga.setCpf(sc.nextLine());			    
+			    
+			    System.out.println("Digite a placa do Veiculo");
+			    vaga.setPlaca(sc.nextLine());
+			    esta.listarVagas();
+			    
+			    System.out.println(" Escolha o numero da vaga");
+			    esta.addCarro(sc.nextInt(), vaga);
+			    esta.listarVagas();		    
+			    
+				break;
+			case 2:		
+				System.out.println("Digite a placa do Veiculo");
+				sc.nextLine();
+			    esta.removeCarro(sc.nextLine());
+				break;				
+			case 3:
+				System.out.println("Obrigado Volte sempre! ...");
+				break;
+				default:
+		}	
+		//sc.close();
+   }while(true);
+       
+	}
+		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

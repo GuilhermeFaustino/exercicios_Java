@@ -1,0 +1,5 @@
+package donastory.company.model;
+
+public class Product {
+
+}

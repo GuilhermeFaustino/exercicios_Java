@@ -1,0 +1,44 @@
+public class Estacionamento {
+		
+
+	Vaga[] vaga = new Vaga[4];
+	
+	public void addCarro(int posicao, Vaga carro) {		
+		 vaga[posicao] = carro;
+		 
+	}
+	
+	public void removeCarro(String placa) {
+	 for(int j=0; j<vaga.length; j++) {
+				System.out.println(placa);
+				System.out.println("--------");
+				System.out.print(j);
+				System.out.println("--------");
+			
+		 }		
+	
+		
+	}	
+	
+	public void listarVagas() {
+		System.out.println("As Vagas Disponiveis são ");
+		
+		for(int i=0; i<vaga.length; i++) {
+			if(vaga[i] == null) {
+				System.out.println("vaga livre " + i);
+			}else {
+				System.out.println("vaga  ocupada " + i + vaga[i]);
+			}			
+			
+		}
+	
+	}	
+	
+}
+
+
+
+
+
+
+

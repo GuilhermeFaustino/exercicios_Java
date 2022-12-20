@@ -1,0 +1,20 @@
+package academy.company.app;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int op=0;
+		do {
+			System.out.println("Bem vindo a sua compra!");
+			System.out.println("Bem vindo a sua compra!");
+		
+			sc.next();
+		}while(op != 0);
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package academy.company.app;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int op=0;
+		do {
+			System.out.println("________\nDivinaLoja\n\n"
+					+ "1 - Escolha O produto\n"
+					+ "2 - Estqoue ddos Produtos\n"
+					+ "3 - Faca Uma venda\n"
+					+ "4 - Pagamentos\n"
+					+ "5 - Caixa\n");
+		
+			sc.next();
+		}while(op != 0);
+		
+		sc.close();
+
+	}
+
+}
